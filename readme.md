@@ -23,11 +23,8 @@ TechCore V1 feature:
 
 TechCore V1 Flow
 
-Staff
-    │
-    ▼
-TechCore
-
+Inventory Process:
+```text
 Category
     │
     ▼
@@ -35,7 +32,10 @@ Category
     │
     ▼
  Stock ◄──── Location
+```
 
+Sales Process:
+```text
 Customer
     │
     ▼
@@ -46,6 +46,7 @@ Sales Order Item
     │
     ▼
 Stock Update
+```
 
 TechCore V1 Explanation Flow
 - Staff can control each product to be managed
@@ -75,7 +76,6 @@ V1 Limitations:
 - Working supplier
 - No buy orders so quantity of stock needs to be added manually
 - Updating sales-order-items has some flaw which is the sales-order-items that can be changed is everything but product_id
-- Sales-order-items doesnt have location log so if items sold we don't know which location sold the items
 - Authentications / authorization
 - Stock transfer from warehouse to store
 - Working log book
