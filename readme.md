@@ -23,24 +23,29 @@ TechCore V1 feature:
 
 TechCore V1 Flow
 
-Staff 
-↓ 
+Staff
+    │
+    ▼
 TechCore
 
 Category
-↓
-Product
-↓
-Stock ← Location
-
+    │
+    ▼
+ Product
+    │
+    ▼
+ Stock ◄──── Location
 
 Customer
-↓
+    │
+    ▼
 Sales Order
-↓
+    │
+    ▼
 Sales Order Item
-↓
-Stock Update 
+    │
+    ▼
+Stock Update
 
 TechCore V1 Explanation Flow
 - Staff can control each product to be managed
@@ -54,11 +59,17 @@ TechCore V1 Explanation Flow
 Current Entity Relationship
 
 Category ----< Product 
+
 Product ----< Stock
+
 Location ----< Stock
+
 Customer ----< Sales Order
+
 Sales Order ----< Sales Order Item
+
 Sales Order Item ---- Product
+
 
 V1 Limitations:
 - Working supplier
